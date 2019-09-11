@@ -54,9 +54,33 @@ p {
 	text-align: left;
 }
 
+h3 {
+	font-family: 'Montserrat' sans-serif;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 16px;
+	padding: 10px 0px 10px 0px;
+}
 
+.link-highlights {
+	text-decoration: none;
+	color: #77a466;
+	line-height: 40px;
+}
 
+.footer {
+	font-family: 'Montserrat' sans-serif;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 16px;
 
+}
+
+#footer-accent {
+	font-family: 'Wisdom Script';
+	color: #77a466;
+	text-transform: lowercase;
+}
 
 /*-----> Positioning <----*/
 .container {
@@ -101,6 +125,7 @@ p {
 	grid-area: grid-2;
 	grid-column-gap: 1em;
 	border: solid 1px #dedbdc;
+	padding: 0px 30px 0px 30px;
 }
 
 .grid-3 {
@@ -108,8 +133,14 @@ p {
 	grid-column-gap: 1em;
 	border-top: solid 1px #dedbdc;
 	border-bottom: solid 1px #dedbdc;
+	padding-left: 30px;
 }
 
 .footer {
 	grid-area: footer;
+}
+
+@font-face {
+	font-family: 'Wisdom Script';
+	src: url ("/fonts/wisdom-script.otf") format ("otf");
 }
