@@ -1,0 +1,115 @@
+
+h1 {
+	text-transform: uppercase;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 30px;
+	font-weight: bold;
+
+}
+
+
+ul li{
+	list-style-type: none;
+	display: inline;
+
+
+}
+
+.menu {
+	text-decoration: none;
+	text-transform: uppercase;
+	font-family: 'Montserrat' sans-serif;
+	font-size: 14px;
+	padding-left: 2%;
+	margin-left: auto;
+	color: #77a466;
+
+}
+
+#title-accent {
+	color: #77a466;
+
+}
+
+img {
+	width: inherit;
+	border: 3px solid #77a466;
+}
+
+h2 {
+	font-family: 'Montserrat' sans-serif;
+	font-size: 18px;
+	font-weight: bold;
+	color: #77a466;
+	text-transform: uppercase;
+	padding-top: 10px;
+
+
+}
+
+p {
+	font-size: 16px;
+	font-family: 'Montserrat' sans-serif;
+	line-height: 30px;
+	text-align: left;
+}
+
+
+
+
+
+/*-----> Positioning <----*/
+.container {
+	margin: 0% 3% 0% 3%;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+	grid-template-rows: 0.1fr 2fr  1fr 0.2fr;
+	grid-template-areas: 
+	"title title navbar navbar navbar navbar"
+	"full-width full-width full-width full-width full-width full-width"
+	"grid-1 grid-1 grid-2 grid-2 grid-3 grid-3"
+	" . . footer footer . . ";
+
+}
+
+
+.title {
+	grid-area: title;
+	align-self: center;
+}
+
+.navbar {
+	grid-area: navbar;
+	padding: 2em;
+	align-self: center;
+	align-items: flex-end;
+	padding-left: 30%;
+}
+
+.full-width {
+	grid-area: full-width;
+	padding-bottom: 2%;
+}
+
+.grid-1 {
+	grid-area: grid-1;
+	border-top: solid 1px #dedbdc;
+	border-bottom: solid 1px #dedbdc;
+}
+
+.grid-2 {
+	grid-area: grid-2;
+	grid-column-gap: 1em;
+	border: solid 1px #dedbdc;
+}
+
+.grid-3 {
+	grid-area: grid-3;
+	grid-column-gap: 1em;
+	border-top: solid 1px #dedbdc;
+	border-bottom: solid 1px #dedbdc;
+}
+
+.footer {
+	grid-area: footer;
+}
